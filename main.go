@@ -29,10 +29,6 @@ func main() {
 	jenkinsUsername := os.Getenv("JENKINS_USERNAME")
 	jenkinsApiToken := os.Getenv("JENKINS_API_TOKEN")
 
-	log.Println("Jenkins Host:", jenkinsHost)
-	log.Println("Jenkins User:", jenkinsUsername)
-	log.Println("Jenkins Token:", jenkinsApiToken)
-
 	argsMap := make(map[string]string)
 	for _, v := range args {
 		parts := strings.SplitN(v, "=", 2)
