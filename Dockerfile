@@ -1,6 +1,6 @@
-FROM alpine:3.16
+FROM ubuntu:20.04
 
-COPY ./build/linux/trigger /bin/trigger
+COPY build/linux/trigger /bin/trigger
 
 RUN ls -al /bin
 RUN trigger --help
