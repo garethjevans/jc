@@ -4,3 +4,5 @@ COPY ./build/linux/trigger /bin/trigger
 
 ENTRYPOINT ["/bin/trigger"]
 
+RUN /bin/trigger --help
+
